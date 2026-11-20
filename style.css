@@ -1,0 +1,50 @@
+:root {
+  --paper: #f6f0e6;
+  --ink: #201a18;
+  --accent: #941f32;
+  --rule: #aa9e94;
+  --display: "Staatliches", sans-serif;
+  --label: "Darker Grotesque", sans-serif;
+  --body: "BIZ UDMincho", Georgia, serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); font: 1rem/1.65 var(--body); }
+a { color: inherit; text-underline-offset: .2em; }
+a:focus-visible { outline: .15rem solid currentColor; outline-offset: .2rem; }
+.skip { position: absolute; inset: .5rem auto auto .5rem; transform: translateY(-200%); padding: .5rem; background: var(--paper); }
+.skip:focus { transform: none; }
+.site-header, footer { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2rem; }
+.site-header { padding: 1rem 5%; border-bottom: 1px solid var(--rule); }
+.brand { font: 1.55rem/1 var(--display); text-decoration: none; }
+nav { display: flex; gap: .35rem 1rem; flex-wrap: wrap; }
+nav, footer { font: 700 1.2rem/1.2 var(--label); }
+nav a { text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+.wrap { width: min(90%, 76rem); margin-inline: auto; }
+.hero { padding-block: clamp(3rem, 8vw, 8rem); background: var(--accent); color: var(--paper); }
+h1, h2, .big-number { font-family: var(--display); font-weight: 400; margin: 0; }
+h1 { font-size: clamp(3.5rem, 15vw, 13rem); line-height: .87; }
+h2 { font-size: clamp(2.25rem, 6vw, 5.25rem); line-height: .95; }
+p { max-width: 62ch; }
+.label { margin: 0 0 1rem; font: 700 1.15rem/1.15 var(--label); letter-spacing: .1em; text-transform: uppercase; }
+.subtitle { font-size: clamp(1rem, 2vw, 1.4rem); }
+.intro { margin-top: clamp(3rem, 7vw, 6rem); }
+.intro h2 { font-size: clamp(2rem, 4vw, 3.75rem); }
+.chapter { border-bottom: 1px solid var(--rule); padding-block: clamp(3rem, 8vw, 7rem); }
+.split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 5vw, 5rem); align-items: center; }
+.origins { background: #e9dbcb; }
+figure { margin: 0; }
+figcaption, caption, .bar-key, .draft { font: 600 1.15rem/1.3 var(--label); }
+figcaption { margin-top: .75rem; }
+.big-number { color: var(--accent); font-size: clamp(5rem, 14vw, 11rem); line-height: .85; }
+.share-bar { margin-top: 1rem; height: 1.75rem; background: var(--paper); border: 1px solid var(--ink); }
+.share-bar span { display: block; width: 57%; height: 100%; background: var(--accent); }
+.bar-key { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 1rem; margin-top: .4rem; }
+table { width: 100%; border-collapse: collapse; font: 700 1.18rem/1.2 var(--label); font-variant-numeric: tabular-nums; }
+caption { text-align: left; margin-bottom: .5rem; }
+th, td { padding: .5rem .3rem; text-align: right; border-bottom: 1px solid var(--rule); }
+th:first-child { text-align: left; }
+.draft { padding: 1rem; border: 1px dashed var(--rule); }
+li { margin-bottom: .5rem; }
+footer { padding-block: 1.5rem; }
+@media (max-width: 44rem) { .split { grid-template-columns: 1fr; } }
