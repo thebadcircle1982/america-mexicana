@@ -92,4 +92,8 @@ footer { padding-block: 1.5rem; }
 html {
   scroll-padding-top: 5rem;
 }
-
+@media (min-width: 45rem) {
+  .hero .label {
+    margin-bottom: 3rem;
+  }
+}
