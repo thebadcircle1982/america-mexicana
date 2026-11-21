@@ -7,55 +7,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Staatliches&family=Darker+Grotesque:wght@400;500;600;700&family=BIZ+UDMincho&display=swap">
   <link rel="stylesheet" href="style.css">
 </head>
-<script>
-  const menuButton = document.querySelector('.menu-toggle');
-  const chapterNav = document.querySelector('#chapter-nav');
 
-  function setMenu(open) {
-    menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    menuButton.querySelector('span').textContent = open ? '×' : '☰';
-  }
-
-  menuButton.addEventListener('click', () => {
-    setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
-  });
-
-  chapterNav.addEventListener('click', (event) => {
-    if (event.target.closest('a')) setMenu(false);
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' &&
-        menuButton.getAttribute('aria-expanded') === 'true') {
-      setMenu(false);
-      menuButton.focus();
-    }
-  });
-
-  menuButton.hidden = false;
-</script>
-
-  <script>
-  const menuButton = document.querySelector('.menu-toggle');
-  const chapterNav = document.querySelector('#chapter-nav');
-
-  function setMenu(open) {
-    menuButton.setAttribute('aria-expanded', String(open));
-    menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
-    menuButton.querySelector('span').textContent = open ? '×' : '☰';
-  }
-
-  menuButton.addEventListener('click', () => {
-    setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
-  });
-
-  chapterNav.addEventListener('click', (event) => {
-    if (event.target.closest('a')) setMenu(false);
-  });
-
-  menuButton.hidden = false;
-</script>
+ 
   
 <body>
   <a class="skip" href="#main">Skip to the story</a>
@@ -144,5 +97,37 @@
     </section>
   </main>
   <footer class="wrap"><span>Designed by Edgar Sandoval</span><a href="#top">Back to top</a></footer>
+
+  <script>
+  const menuButton = document.querySelector('.menu-toggle');
+  const chapterNav = document.querySelector('#chapter-nav');
+
+  function setMenu(open) {
+    menuButton.setAttribute('aria-expanded', String(open));
+    menuButton.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+    menuButton.querySelector('span').textContent = open ? '×' : '☰';
+  }
+
+  menuButton.addEventListener('click', () => {
+    setMenu(menuButton.getAttribute('aria-expanded') !== 'true');
+  });
+
+  chapterNav.addEventListener('click', (event) => {
+    if (event.target.closest('a')) setMenu(false);
+  });
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' &&
+        menuButton.getAttribute('aria-expanded') === 'true') {
+      setMenu(false);
+      menuButton.focus();
+    }
+  });
+
+  menuButton.hidden = false;
+</script>
+
 </body>
+
+
 </html>
