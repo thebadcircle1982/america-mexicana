@@ -48,3 +48,36 @@ th:first-child { text-align: left; }
 li { margin-bottom: .5rem; }
 footer { padding-block: 1.5rem; }
 @media (max-width: 44rem) { .split { grid-template-columns: 1fr; } }
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 44rem) {
+  .site-header .menu-toggle:not([hidden]) {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-left: auto;
+    padding: 0;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .site-header #chapter-nav {
+    flex-basis: 100%;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .site-header #chapter-nav a {
+    padding: .65rem 0;
+  }
+
+  .menu-toggle:not([hidden])[aria-expanded="false"] + #chapter-nav {
+    display: none;
+  }
+}
