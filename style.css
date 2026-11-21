@@ -81,3 +81,14 @@ footer { padding-block: 1.5rem; }
     display: none;
   }
 }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--paper);
+}
+
+html {
+  scroll-padding-top: 5rem;
+}
