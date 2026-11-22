@@ -105,3 +105,14 @@ body {
 .hero h1 {
   text-shadow: 2px 1px 0 rgba(18, 99, 73, 0.65);
 }
+
+.hero,
+.origins {
+  background: transparent;
+  color: #126349;
+}
+
+.hero h1,
+.origins h2 {
+  color: #F24822;
+}
