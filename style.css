@@ -1,7 +1,8 @@
 :root {
   --paper: #f6f0e6;
-  --ink: #201a18;
-  --accent: #941f32;
+--accent: #E6007E;     /* Pink: title and big numbers */
+--ink: #126349;        /* Deep green: body text and navigation */
+--riso-green: #A3F26B; /* Fluorescent green: highlights and shapes */
   --rule: #aa9e94;
   --display: "Staatliches", sans-serif;
   --label: "Darker Grotesque", sans-serif;
