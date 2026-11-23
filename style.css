@@ -117,3 +117,19 @@ body {
 .origins h2 {
   color: #EF445C;
 }
+
+/* América Mexicana — agave palette test */
+.hero {
+  background: transparent;
+  color: #242321;
+}
+
+.hero h1 {
+  color: #245C4D;
+  text-shadow: none;
+}
+
+.hero .label,
+.hero .subtitle {
+  color: #242321;
+}
