@@ -103,35 +103,22 @@ body {
   background-repeat: repeat;
 }
 
-.hero h1 {
-  text-shadow: 2px 1px 0 rgba(18, 99, 73, 0.65);
-}
-
+/* Let the paper texture show through both sections */
 .hero,
 .origins {
   background: transparent;
-  color: #126349;
+  color: var(--ink);
 }
 
+/* Neon pink title, headings, and big numbers */
 .hero h1,
-.origins h2 {
-  color: #EF445C;
-}
-
-/* América Mexicana — pink headings, green text */
-body,
-.hero,
-.origins,
-.hero .label,
-.hero .subtitle,
-main a {
-  color: #126349;
-}
-
-main h1,
 main h2,
 main h3,
 .big-number {
-  color: #FF13F0;
+  color: var(--accent);
 }
 
+/* Remove the old green offset from the main title */
+.hero h1 {
+  text-shadow: none;
+}
