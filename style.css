@@ -126,3 +126,14 @@ main h3,
 .hero h1 + .label {
   margin: 1.5rem 0 0.5rem;
 }
+
+@media (min-width: 60rem) {
+  .hero .intro {
+    max-width: 46rem;
+    margin-inline: auto;
+  }
+
+  .hero .intro p {
+    max-width: 65ch;
+  }
+}
