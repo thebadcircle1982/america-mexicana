@@ -87,7 +87,7 @@ footer { padding-block: 1.5rem; }
   position: sticky;
   top: 0;
   z-index: 10;
-  background: var(--paper);
+  background: #13FF22;
 }
 
 html {
