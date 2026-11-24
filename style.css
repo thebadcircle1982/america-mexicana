@@ -118,19 +118,20 @@ body {
   color: #EF445C;
 }
 
-/* América Mexicana — agave palette test */
-.hero {
-  background: transparent;
-  color: #242321;
-}
-
-.hero h1 {
-  color: #FF13F0;
-  text-shadow: none;
-}
-
+/* América Mexicana — pink headings, green text */
+body,
+.hero,
+.origins,
 .hero .label,
-.hero .subtitle {
-  color: #242321;
+.hero .subtitle,
+main a {
+  color: #126349;
+}
+
+main h1,
+main h2,
+main h3,
+.big-number {
+  color: #FF13F0;
 }
 
