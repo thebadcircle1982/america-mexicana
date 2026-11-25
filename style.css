@@ -143,3 +143,63 @@ main h3,
 .border-story {
   border-top: 1px solid var(--rule);
 }
+
+
+.border-map {
+  max-width: 56rem;
+  margin: 2rem auto 0;
+}
+
+.border-map-labels {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: .5rem;
+  font: 700 1.25rem/1.2 var(--label);
+}
+
+.border-map-labels span:last-child {
+  text-align: right;
+}
+
+.border-map-images {
+  --reveal: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid var(--rule);
+}
+
+.border-map-images img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.border-map-images .border-map-before {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 calc(100% - var(--reveal)) 0 0);
+}
+
+.border-map-divider {
+  position: absolute;
+  inset-block: 0;
+  left: var(--reveal);
+  width: 2px;
+  background: var(--ink);
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.border-map label {
+  display: block;
+  margin-top: .75rem;
+}
+
+#border-map-slider {
+  display: block;
+  width: 100%;
+  min-height: 44px;
+  margin: 0;
+  accent-color: var(--ink);
+}
