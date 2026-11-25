@@ -47,6 +47,41 @@
         <p class="label">02 / History</p>
         <h2 id="border-title">The Border Crossed Us</h2>
         <!-- Add your map and historical content here later. -->
+        <figure class="border-map">
+  <div class="border-map-labels">
+    <span>Before the war</span>
+    <span>Present-day border</span>
+  </div>
+
+  <div class="border-map-images">
+    <img src="assets/map-after.svg"
+         alt="Illustration of Mexico and the United States with the present-day border.">
+    <img class="border-map-before" src="assets/map-before.svg"
+         alt="Illustration of Mexico and the United States before the war, showing Mexico extending farther north.">
+    <span class="border-map-divider" aria-hidden="true"></span>
+  </div>
+
+  <label for="border-map-slider">Drag to compare the borders</label>
+  <input id="border-map-slider" type="range" min="0" max="100" value="50">
+
+  <figcaption>
+    Pink = Mexico · Green = United States · Illustrative maps, not to scale.
+  </figcaption>
+</figure>
+
+<script>
+  (() => {
+    const slider = document.querySelector('#border-map-slider');
+    const images = document.querySelector('.border-map-images');
+
+    function updateMap() {
+      images.style.setProperty('--reveal', `${slider.value}%`);
+    }
+
+    slider.addEventListener('input', updateMap);
+    updateMap();
+  })();
+</script>
       </div>
     </section>
 
